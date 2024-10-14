@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Coutry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 p-5" id="game-controls">
+          <h2>Guess the Coutry</h2>
+          <p></p>
+          <p id="prev-country"></p>
+          <p class="fst-italic" id="hint"></p>
+          <div class="input-group pb-3">
+            <input
+              class="form-control"
+              type="text"
+              id="country-input"
+              placeholder="Type a Country Name"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              id="btn-guess"
+              onclick="makeGuess()"
+            >
+              Guess
+            </button>
+          </div>
+          <p id="result"></p>
+          <div class="pb-3">
+            <button class="btn btn-secondary" onclick="startNewGame()">
+              New Game
+            </button>
+            <button class="btn btn-secondary" onclick="giveUp()">
+              Give Up
+            </button>
+          </div>
+          <p id="score"></p>
+        </div>
+        <div class="col-lg vh-100" id="map"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
