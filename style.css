@@ -1,0 +1,18 @@
+.gradient-bar {
+  height: 30px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(255, 0, 0),
+    rgb(127, 0, 127),
+    rgb(0, 0, 255)
+  );
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.gradient-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
