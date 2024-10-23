@@ -16,3 +16,13 @@
   justify-content: space-between;
   font-size: 14px;
 }
+
+@media (max-width: 767px) {
+  .full-vh-mobile {
+      max-height: 100vh;
+      overflow-y: auto;
+  }
+  .vh-60-mobile {
+      max-height: 50vh;
+  }
+}
